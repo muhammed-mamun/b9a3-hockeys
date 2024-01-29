@@ -1,28 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Manrop Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        *{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Manrop Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome CDN -->
+  <script src="https://kit.fontawesome.com/fddcefc421.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <header>
+    <div class="container mx-auto lg:px-28 px-8">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"><img src="./Images/Hockey’s.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <p class="pr-2 hidden"><i class="fa-solid fa-magnifying-glass"></i></p>
+          <a class="btn btn-error">Get Ticket</a>
+        </div>
+      </div>
+    </div>
+    <div class="conatainer mx-auto lg:px-28 px-8">
+      <div class="carousel w-full rounded-lg">
+        <div id="slide1"
+          class="carousel-item relative w-full lg:h-[60vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./Images/1.png)] bg-center">
+          <div
+            class="absolute flex justify-center lg:justify-start transform -translate-y-1/2 left-5 right-5 space-x-2 bottom-2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full h-[60vh] ">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div
+            class="absolute justify-center lg:justify-start flex transform -translate-y-1/2 left-5 right-5 space-x-2 bottom-2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full h-[60vh] ">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center lg:justify-start transform -translate-y-1/2 left-5 right-5 space-x-2 bottom-2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full h-[60vh] ">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center lg:justify-start transform -translate-y-1/2 left-5 right-5 space-x-2 bottom-2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class=" lg:w-7/12 p-8 rounded-lg bg-[#131318] ml-auto mr-4 lg:-translate-y-48 w-full">
+        <h2 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h2>
+        <p class="text-base font-medium text-slate-100">Championship is one of the biggest dream of any sporting club.
+          Last week we won our dream , it's a victory</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Professional Section -->
+    <div class="container mx-auto lg:px-20 px-8 lg:pt-20  w-full ">
+      <div>
+        <h2 class="font-extrabold text-xl lg:text-4xl text-[#131318] text-center pt-7">Professional Hockeys Club</h2>
+        <p class="font-medium text-base m-auto pt-7 text-center lg:w-[550px]">Hockey is the most popular game in the
+          town. Also, it is a popular game and an interesting game that many countries play. </p>
+      </div>
+      <hr class="h-[1px] text-[rgba(19, 19, 24, 0.20)]">
+      <div class="w-full grid justify-between grid-cols-1 lg:grid-cols-4 pt-12 gap-7">
+        <div class="justify-center text-center">
+          <div class="radial-progress text-[#49D293]" style="--value:70; --size:6rem; --thickness: 10px;"
+            role="progressbar">70%</div>
+          <h2 class="text-xl lg:font-semibold">Experienced Coach</h2>
+          <p class="text-base">We have best team of experienced couch to help you achieve your dream</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress text-[#FFB546]" style="--value:90; --size:6rem; --thickness: 10px;"
+            role="progressbar">90%</div>
+          <h2 class="text-xl lg:font-semibold">Fitnes Center</h2>
+          <p class="text-base">We have a fitness center to fit you</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:85; --size:6rem; --thickness: 10px;"
+            role="progressbar">85%</div>
+          <h2 class="text-xl lg:font-semibold">Experienced Trainer</h2>
+          <p class="text-base">We have a good team of trainer to make you motivated</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress" style="--value:95; --size:6rem; --thickness: 10px;" role="progressbar">95%</div>
+          <h2 class="text-xl lg:font-semibold">Winning Rate</h2>
+          <p class="text-base">Our club has impressive winning rate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program Sections -->
+    <div class="container mx-auto lg:px-20 px-8 lg:pt-20  w-full ">
+      <h2 class="text-xl text-center lg:text-4xl font-semibold lg:font-semibold pt-7">Program Sections</h2>
+      <p class="text-base p-6">There are few program operate by us. We focus on every age group of people. Looks where
+        you fit </p>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-4 w-full ">
+          <div class="bg-[url('./Images/2.png')] rounded-lg bg-no-repeat pl-6 lg:pl-10 pt-6 lg:pt-10">
+            <h2 class="pb-3 lg:pb-4 text-xl lg:text-2xl font-extrabold text-white">Junior Program</h2>
+            <p class="pb-5 lg:pb-6 text-white">We have a greate management team to train Junior player</p>
+            <button class="btn btn-error text-white mb-6 lg:mb-10">Register Now!</button>
+          </div>
+          <div class="bg-[url('./Images/3.png')] rounded-lg bg-no-repeat pl-6 lg:pl-10 pt-6 lg:pt-10">
+            <h2 class="pb-3 lg:pb-4 text-xl lg:text-2xl font-extrabold text-white">Teenager Program</h2>
+            <p class="pb-5 lg:pb-6 text-white">We have a greate management team to train teenager player</p>
+            <button class="btn btn-error text-white mb-6 lg:mb-10">Register Now!</button>
+          </div>
+        </div>
+        <div class="bg-[url('./Images/4.png')]  rounded-lg bg-no-repeat pl-6 lg:pl-10 pt-6 lg:pt-10">
+          <h2 class="pb-3 lg:pb-4 pt-6 lg:pt-20 text-xl lg:text-2xl font-extrabold text-white">Professional Program</h2>
+          <p class="pb-5 lg:pb-6 text-white">We have a greate management team to train Professional player</p>
+          <button class=" btn btn-error text-white mb-6 lg:mb-10">Register Now!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="container mx-auto lg:px-20 px-8 lg:pt-20  w-full ">
+      <div class="grid justify-center text-center">
+        <h2 class="text-xl lg:text-2xl font-extrabold pb-3 lg:pb-6">Our New Products</h2>
+        <p class="text-base text-center font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+          turpis placerat
+          dolor. Purus urna in sit
+          nullam proin. </p>
+
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 justify-between pt-5 gap-1">
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/5.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/6.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/7.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/8.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/9.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 h-52">
+          <img class="h-[90%] text-center justify-center" src="./Images/10.png" alt="">
+          <div class="grid grid-cols-1">
+            <div class="flex pb-3">
+              <p><i class="fa-solid fa-star pr-1 "></i>5.0</p>
+              <p><i class="fa-solid fa-eye pr-1 pl-3"></i>20</p>
+              <p><i class="fa-solid fa-heart pr-1 pl-3"></i>200</p>
+            </div>
+            <h1 class="text-x font-extrabold text-[#131318]">World Cup Flags Football</h1>
+            <p class="text-base">Dolor sit amet consectetur. Ut urna </p>
+            <div class="flex">
+              <h3 class="text-[14px]">$22</h3>
+              <img class="-translate-y-2" src="./Images/Frame.svg" alt="">
+              <p class="text-[14px]">Delivery Fee : Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client -->
+    <div class="container mx-auto lg:px-20 px-8 lg:pt-20  w-full ">
+      <div>
+        <h2 class="text-xl text-center lg:text-4xl font-semibold lg:font-semibold pt-7">Get in Touch</h2>
+        <p class="text-base text-center p-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit
+          nullam proin. </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
+        <div class="lg:col-span-5 h-[474px] bg-gray-50 lg:p-12">
+          <div class="lg:p-6">
+            <div class="p-6 lg:pl-8">
+              <img src="./Images/call.png" alt="">
+              <p class="text-[#131318] text-lg">Phone Number</p>
+              <h3 class="text-lg font-extrabold ">(+62) 123-321-543</h3>
+            </div>
+            <div class="p-6 lg:pl-8">
+              <img src="./Images/mail.png" alt="">
+              <p class="text-[#131318] text-lg">Email</p>
+              <h3 class="text-lg font-extrabold ">hockeys@support.com</h3>
+            </div>
+            <div class="p-6 lg:pl-8">
+              <img src="./Images/google-maps 1.png" alt="">
+              <p class="text-[#131318] text-lg">Location</p>
+              <h3 class="text-lg font-extrabold ">152/1 Mohakhali Wireless Gate</h3>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 h-[474px] bg-gray-50">
+          
+        </div>
+      </div>
+    </div>
+    <!-- social -->
+    <div class="container mx-auto lg:px-20 px-8 lg:pt-32 w-full ">
+      <h2 class="lg:text-2xl font-extrabold text-center">Social Media</h2>
+      <div class="flex gap-2 justify-center pt-6 pb-6">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+  </main>
+  <footer class="container mx-auto lg:px-20 px-8 lg:pt-24 lg:pb-24 w-full bg-[#131318]">
+    <div class="grid grid-cols-1 lg:grid-cols-3 justify-between pt-6">
+      <div >
+        <h2 class="text-2xl text-center lg:text-3xl font-extrabold text-white">Get In Touch</h2>
+        <p class="text-base text-center font-medium text-white  pt-4">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div class="flex gap-1 justify-center pt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-base font-medium text-white">hockeys@support.com</p>
+        </div>
+       <div class="flex gap-1 justify-center  pt-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p class="text-base text-center font-medium text-white">(+62) 123-321-543</p>
+    </div>
+      </div>
+      <div class="flex justify-center lg:justify-between  lg:ml-14 gap-14">
+        <div><h3 class="text-2xl text-center lg:text-3xl font-extrabold text-white">Company</h3>
+          <p class="text-base  text-center font-medium text-white  pt-4">About Us</p>
+          <p class="text-base text-center font-medium text-white  pt-4">Leadership</p>
+          <p class="text-base text-center font-medium text-white  pt-4">Careers</p>
+          <p class="text-base text-center font-medium text-white  pt-4">News & Articles</p>
+          <p class="text-base text-center font-medium text-white  pt-4">Legal Notice</p>
+        </div>
+        <div><h3 class="text-2xl text-center lg:text-3xl font-extrabold text-white">Support</h3>
+          <p class="text-base text-center font-medium text-white  pt-4">Help Center</p>
+          <p class="text-base text-center font-medium text-white  pt-4">FAQ</p>
+          <p class="text-base text-center font-medium text-white  pt-4">Ticket Support</p>
+          <p class="text-base text-center font-medium text-white  pt-4">Contact Us</p>
+        </div>
+      </div>
+      <div class="lg:ml-auto m-auto ">
+        <h3 class="text-2xl text-center lg:text-3xl font-extrabold text-white">Services</h3>
+        <p class="text-base text-center font-medium text-white  pt-4">Group Lesson</p>
+        <p class="text-base text-center font-medium text-white  pt-4">Private Lesson</p>
+        <p class="text-base text-center font-medium text-white  pt-4">Hockeys for kids</p>
+        <p class="text-base text-center font-medium text-white  pt-4">Hockeys for Adult</p></div>
+    </div> 
+  </footer>
 </body>
 
 </html>
